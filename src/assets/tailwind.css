@@ -3,3 +3,27 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base{
+    .btn{
+        @apply px-4 py-2 rounded-md text-sm font-semibold
+    }
+    .primary-btn{
+        @apply bg-white text-bg-restu hover:shadow-neon-white duration-300 transition-all
+    }
+    .secondary-btn{
+        @apply border border-white text-white hover:shadow-neon-white duration-300 transition-all
+    }
+}
+
+@layer utilities{
+    ::-webkit-scrollbar{
+        width:0px;
+        background:transparent;
+        height:2px
+    }
+    ::-webkit-scrollbar-thumb{
+        background:#5B5B5B;
+        border-radius:10px;
+    }
+}
