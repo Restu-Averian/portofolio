@@ -24,6 +24,9 @@ module.exports = {
         'bg-restu':'#272727',
         'card-restu':'#363636',
         'chip-restu':'#5E5E5E'
+      },
+      boxShadow:{
+        'neon-white':'0 0 10px #FFFFFF, 0 0 40px #FFFFFF'
       }
     },
   },
