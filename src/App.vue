@@ -1,13 +1,19 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div id="app" class="bg-bg-restu">
+    <component :is="layout">
+      <router-view />
+    </component>
   </div>
 </template>
-
+<script>
+export default {
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || "blank") + "-layout";
+    },
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
