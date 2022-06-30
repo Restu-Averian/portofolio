@@ -2,7 +2,7 @@
   <div>
     <div class="container lg:mx-0 px-5 mt-5 mx-auto lg:text-left text-right">
       <div class="bg-card-restu inline-block px-4 py-2 rounded-md">
-        <p class="text-white">Song : <strong>Undertale - His Theme</strong></p>
+        <p class="text-white"><strong>Music :</strong> Undertale - His Theme</p>
 
         <audio id="mySong">
           <source

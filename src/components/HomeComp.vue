@@ -6,7 +6,7 @@
       lg:space-y-12
       hp:space-y-5
       flex-col
-      lg:px-32
+      lg:pb-10 lg:px-32
       px-4
       text-left text-white
     "
@@ -52,6 +52,11 @@
       ></i>
       <svg
         class="lg:w-9 lg:h-9 w-8 h-8 cursor-pointer"
+        @click="
+          openWeb(
+            'https://drive.google.com/file/d/1vnIOGfID-vLyr7AXlkN_mtVxK0OqqyFb/view?usp=sharing'
+          )
+        "
         viewBox="0 0 30 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +74,7 @@
 export default {
   methods: {
     openWeb(link) {
+      console.log(link);
       window.open(link, "_blank");
     },
   },
