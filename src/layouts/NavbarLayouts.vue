@@ -2,11 +2,13 @@
   <div>
     <div class="container lg:mx-0 px-5 mt-5 mx-auto lg:text-left text-right">
       <div class="bg-card-restu inline-block px-4 py-2 rounded-md">
-        <p class="text-white"><strong>Music :</strong> Undertale - His Theme</p>
+        <p class="text-white">
+          <strong>Music :</strong> Undertale - Home (Music Box)
+        </p>
 
-        <audio id="mySong">
+        <audio id="mySong" loop>
           <source
-            src="https://www.mboxdrive.com/Undertale%20OST_%20090%20-%20His%20Theme.mp3"
+            src="https://www.mboxdrive.com/Undertale%20OST%20-%20Home%20(Music%20Box)%20Extended%20(320%20%20kbps)%20(https___youtube-to-mp3.id_).mp3"
             type="audio/mp3"
           />
         </audio>
