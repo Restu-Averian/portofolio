@@ -1,0 +1,15 @@
+[
+    {
+        "idproject": 0,
+        "name": "Resnime - Website Download dan Streaming Anime",
+        "photo": "https://res.cloudinary.com/dcvolkyfb/image/upload/v1656560237/Project-Screenshot/React/Resnime_iuxetk.png",
+        "linkWeb": "https://resnime.my.id/",
+        "linkGithub": "https://github.com/Restu-Averian/Resnime",
+        "tools": [
+            "React.js",
+            "Axios",
+            "Firebase",
+            "Tailwind CSS"
+        ]
+    }
+]

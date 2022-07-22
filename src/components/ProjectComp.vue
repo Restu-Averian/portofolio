@@ -48,24 +48,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      projectList: [
-        {
-          idproject: 0,
-          name: "News App",
-          photo:
-            "https://res.cloudinary.com/dcvolkyfb/image/upload/v1655378730/Project-Screenshot/Nuxt/news_app-nuxtjs_ccqdh2.png",
-          linkWeb: "https://nuxt-news-app.netlify.app/",
-          linkGithub: "https://github.com/Restu-Averian/nuxt-news-app",
-          tools: ["Vue.js", "Axios", "Nuxt.js", "PWA", "Vuetify"],
-        },
-      ],
-    };
-  },
+  props: ["projectList"],
   methods: {
-    openWeb(link) {
-      window.open(link, "_blank");
+    openWeb(page) {
+      this.$emit("openWeb", page);
     },
   },
 };
