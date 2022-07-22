@@ -48,22 +48,23 @@
       </div>
       <transition enter-to-class="animated fadeIn">
         <div v-if="current == 'react'" class="px-4">
-          <react-projects-comp />
+          <project-comp :projectList="projectList" @openWeb="openWeb" />
         </div>
       </transition>
       <transition enter-to-class="animated fadeIn">
         <div v-if="current == 'vue'" class="px-4">
-          <vue-projects-comp />
+          <project-comp :projectList="projectList" @openWeb="openWeb" />
         </div>
       </transition>
       <transition enter-to-class="animated fadeIn">
         <div v-if="current == 'nuxt'" class="px-4">
           <nuxt-projects-comp />
+          <project-comp :projectList="projectList" @openWeb="openWeb" />
         </div>
       </transition>
       <transition enter-to-class="animated fadeIn">
         <div v-if="current == 'javascript'" class="px-4">
-          <javascript-projects-comp />
+          <project-comp :projectList="projectList" @openWeb="openWeb" />
         </div>
       </transition>
     </div>
@@ -71,25 +72,46 @@
 </template>
 
 <script>
-import NuxtProjectsComp from "@/components/NuxtProjectsComp.vue";
-import VueProjectsComp from "../components/VueProjectsComp.vue";
-import ReactProjectsComp from "@/components/ReactProjectsComp.vue";
-import JavascriptProjectsComp from "@/components/JavascriptProjectsComp.vue";
+import ProjectComp from "@/components/ProjectComp.vue";
 export default {
   components: {
-    VueProjectsComp,
-    NuxtProjectsComp,
-    ReactProjectsComp,
-    JavascriptProjectsComp,
+    ProjectComp,
   },
   data() {
     return {
       current: "react",
+      projectList: null,
     };
   },
   methods: {
     changeProject(jenis) {
       this.current = jenis;
+    },
+    async fetchData() {
+      let response;
+      if (this.current == "react") {
+        response = await fetch("react.json");
+      } else if (this.current == "vue") {
+        response = await fetch("vue.json");
+      } else if (this.current == "javascript") {
+        response = await fetch("vanillajavascript.json");
+      } else if (this.current == "nuxt") {
+        response = await fetch("nuxt.json");
+      }
+      let data = await response.json();
+      this.projectList = data;
+    },
+    openWeb(link) {
+      window.open(link, "_blank");
+    },
+  },
+  mounted() {
+    this.fetchData();
+  },
+  watch: {
+    current(newVal) {
+      this.current = newVal;
+      this.fetchData();
     },
   },
 };

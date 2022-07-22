@@ -1,0 +1,55 @@
+[
+    {
+        "idproject": 0,
+        "name": "News App",
+        "photo": "https://res.cloudinary.com/dcvolkyfb/image/upload/v1655367833/Project-Screenshot/Vue/newsapp_vue_jpmpk6.png",
+        "linkWeb": "https://vuetify-news-app-restu.netlify.app/",
+        "linkGithub": "https://github.com/Restu-Averian/news-app-vuetify",
+        "tools": [
+            "Vue.js",
+            "Axios"
+        ]
+    },
+    {
+        "idproject": 1,
+        "name": "E-Commerce Hp",
+        "photo": "https://res.cloudinary.com/dcvolkyfb/image/upload/v1655368140/Project-Screenshot/Vue/ecommerce_vue_gkw9rt.png",
+        "linkWeb": "https://restuap-mini-project-km-ecommerce-hp.netlify.app/",
+        "linkGithub": "https://github.com/Restu-Averian/simple-ecommerce-phone",
+        "tools": [
+            "Vue.js",
+            "Axios",
+            "GraphQL Hasura",
+            "Buefy",
+            "Vuesax",
+            "Iview"
+        ]
+    },
+    {
+        "idproject": 2,
+        "name": "Pustaka Pribadi",
+        "photo": "https://res.cloudinary.com/dcvolkyfb/image/upload/v1655373065/Project-Screenshot/Vue/pustaka-pribadi-vue_jsx7zc.png",
+        "linkWeb": "https://pustaka-pribadimu.netlify.app/",
+        "linkGithub": "https://github.com/Restu-Averian/bookshelf-vue",
+        "tools": [
+            "Vue.js",
+            "PWA",
+            "Axios",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        "idproject": 3,
+        "name": "Invoicein Aja",
+        "photo": "https://res.cloudinary.com/dcvolkyfb/image/upload/v1658501838/Project-Screenshot/Vue/Invoiceinaja_vue_ykrixp.png",
+        "linkWeb": "http://103.191.92.105:8080/",
+        "linkGithub": "https://github.com/Capstone-Project-Alta-KM2/invoiceinaja-frontend-vue",
+        "tools": [
+            "Vue.js",
+            "Axios",
+            "Tailwind CSS",
+            "Firebase",
+            "Chart.js"
+        ]
+    }
+]
